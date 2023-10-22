@@ -1,18 +1,18 @@
 var mongoose = require("mongoose");
-var stSchema = new mongoose.Schema({
+var empSchema = new mongoose.Schema({
   name: {
-    first_name: {
+    firstName: {
       type: String,
       require: true,
     },
-    last_name: {
+    lastName: {
       type: String,
       require: true,
     },
   },
-  rollno: {
+  employeeId: {
     type: String,
     require: true,
   },
 });
-module.exports = mongoose.model("student", stSchema);
+module.exports = mongoose.model("Employee", empSchema);
