@@ -1,8 +1,14 @@
 var mongoose = require("mongoose");
 var stSchema = new mongoose.Schema({
   name: {
-    type: String,
-    require: true,
+    first_name: {
+      type: String,
+      require: true,
+    },
+    last_name: {
+      type: String,
+      require: true,
+    },
   },
   rollno: {
     type: String,
